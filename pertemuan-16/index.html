@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Script</title>
+  
+</head>
+<body>
+  <button id="button">Click me</button>
+  <p id="text"></p>
+  
+  <script>
+    function onClick() {
+      console.log(this)
+      const text = document.getElementById('text')
+      console.log(text)
+      // alert('oke')
+      if (!confirm('confirm?')) return
+    
+      text.innerHTML += 'Hello World!'
+    }
+    
+    const button = document.getElementById('button')
+    button.onclick = onClick
+
+    const text = document.getElementById('text')
+    text.onclick = onClick
+  </script>
+</body>
+</html>

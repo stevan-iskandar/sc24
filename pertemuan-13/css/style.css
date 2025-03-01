@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+/* table {
+  width: 100vw;
+  height: 100vh;
+} */
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: .25rem .5rem;
+}
+
+.table-title {
+  background-color: aquamarine;
+}

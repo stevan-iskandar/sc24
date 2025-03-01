@@ -1,0 +1,24 @@
+:root {
+  --calculator-padding: .5rem;
+  --button-width: 75px;
+  --button-margin-h: .25rem;
+}
+
+.calculator,
+.btn {
+  border-radius: .5rem;
+}
+
+.calculator {
+  padding: var(--calculator-padding);
+  width: calc((var(--button-width) + var(--button-margin-h) * 2) * 4 + var(--calculator-padding) * 2);
+  background-color: #3c3c3c;
+}
+
+.btn {
+  width: var(--button-width);
+  height: calc(var(--button-width) * .66);
+  margin: var(--button-margin-h);
+  font-size: 20px;
+  font-weight: bold;
+}

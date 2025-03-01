@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  background-color: gray;
+}
+
+#about {
+  background-color: aqua;
+}

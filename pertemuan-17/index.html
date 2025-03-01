@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Script</title>
+  
+</head>
+<body>
+  <input name="value1" type="number"/>
+  +
+  <input name="value2" type="number"/>
+  <button id="add">Add</button>
+  <button id="clear">Clear</button>
+  <p id="text"></p>
+
+  <script>
+    const value1 = document.querySelector('input[type="number"][name="value1"]')
+    const value2 = document.querySelector('input[type="number"][name="value2"]')
+    const text = document.getElementById('text')
+
+    function addValue() {
+      text.innerHTML = parseFloat(value1.value) + parseFloat(value2.value)
+    }
+
+    const buttonAdd = document.getElementById('add')
+    buttonAdd.onclick = addValue
+
+    function clear() {
+      if (!confirm('Clear text anad input?')) return
+      
+      value1.value = null
+      value2.value = null
+      text.innerHTML = ''
+    }
+
+    const buttonClear = document.getElementById('clear')
+    buttonClear.onclick = clear
+  </script>
+</body>
+</html>
