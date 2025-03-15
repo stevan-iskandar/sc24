@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.content>section:nth-child(even) {
+  background-color: aqua;
+}
+
+section {
+  scroll-snap-align: start;
+  flex: none;
+  height: 100vh;
+  position: relative;
+}
+
+section>h1 {
+  margin: 0;
+}
